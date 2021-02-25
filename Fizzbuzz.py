@@ -40,3 +40,21 @@ class fizzbuzz_programme (unittest.TestCase):
         assert Buzz(-5) == 'Buzz'       # multiple negatif de 5
         assert Buzz(-4) == -4           # negatif non-multiple de 5
         assert Buzz('Fizz') == 'Fizz'   # test input de string    
+
+#--------------------------------
+    def fonction_fizzbuzz ():
+
+        def erreur_si_input_vide ():
+                with unittest(TestCase) as exception_info:
+                    FizzBuzz() 
+                    assert exception_info.type == TypeError
+                    assert "1 argument requis manquant" in str(exception_info.value)
+
+    def retourne_fizzbuzz_si_multiple_15 ():
+
+        assert FizzBuzz(15) == 'FizzBuzz'   # multiple de 15
+        assert FizzBuzz(2) == 2             # non multiple de 15
+        assert FizzBuzz(0) == 'FizzBuzz'    # zero
+        assert FizzBuzz(-15) == 'FizzBuzz'  # negatif multiple de 15
+        assert FizzBuzz(-4) == -4           # negatif non multiple de 15
+        assert FizzBuzz('Fizz') == 'Fizz'   # test input dun string
