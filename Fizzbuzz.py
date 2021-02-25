@@ -47,7 +47,7 @@ class fizzbuzz_programme (unittest.TestCase):
         def erreur_si_input_vide ():
                 with unittest(TestCase) as exception_info:
                     FizzBuzz() 
-                    assert exception_info.type == TypeError
+                    assert exception_info.type == TestCase
                     assert "1 argument requis manquant" in str(exception_info.value)
 
     def retourne_fizzbuzz_si_multiple_15 ():
